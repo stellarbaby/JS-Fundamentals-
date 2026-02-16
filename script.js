@@ -142,4 +142,28 @@ console.log('19' - '13' + 17);
 console.log('123' < 57);
 console.log(5 + 6 + '4' + 9 - 4 - 2);
 
-// Boolean logic
+// Equality operators
+const numNeighbours = Number(prompt("How many neighbour countries does your country have?"));
+if (numNeighbours === 1) 
+    console.log("Only 1 border!");
+else if (numNeighbours > 1)
+    console.log("More than 1 border");
+else console.log("No borders");
+
+// Logical operators
+ if (language === 'english' && population < 50 && !isIsland)  
+  { console.log(`You should live in ${country} :)`); 
+  } else {console.log(`${country} does not meet your criteria :`);};
+
+  // Coding Challenge #3 
+const scoDolphins = (96 + 108 + 89) / 3;
+const scoKoalas = (88 + 91 + 110) / 3;
+console.log(scoDolphins, scoKoalas);
+
+if (scoDolphins > scoKoalas) {
+    console.log("Dolphins won")
+} else if (scoKoalas > scoDolphins) {
+    console.log("Koalas won")
+} else if (scoDolphins === scoKoalas) {
+    console.log("We have a draw")
+};
