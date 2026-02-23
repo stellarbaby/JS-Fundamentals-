@@ -159,7 +159,6 @@ else console.log("No borders");
 const scoDolphins = (96 + 108 + 89) / 3;
 const scoKoalas = (88 + 91 + 110) / 3;
 console.log(scoDolphins, scoKoalas);
-
 if (scoDolphins > scoKoalas) {
     console.log("Dolphins won")
 } else if (scoKoalas > scoDolphins) {
@@ -167,3 +166,58 @@ if (scoDolphins > scoKoalas) {
 } else if (scoDolphins === scoKoalas) {
     console.log("We have a draw")
 };
+
+// The Switch Statement
+const day = "wednesday";
+switch (day) {
+    case 'monday':
+        console.log('A cool day!!!');
+        break;
+    case 'tuesday':
+        console.log('I am me');
+        break;
+    case 'wednesday':
+        console.log('wednesday is cool');
+        break;
+};
+
+const natLanguage = 'spanish';
+switch (natLanguage) {
+    case 'chinese':
+        console.log('MOST number of native speakers!');
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'english':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('Number 4');
+        break;
+    case 'arabic':
+        console.log('5th most spoken language');
+        break;
+    default:
+        console.log('Great language too :D')
+        break;
+};
+
+if (natLanguage == 'chinese') {
+   console.log('MOST number of native speakers!');
+} else if (natLanguage == 'spanish')
+   {
+   console.log('2nd place in number of native speakers');    
+} else if (natLanguage == 'english') {
+   console.log('3rd place');
+};
+
+// The Conditional (Ternary) Operator 
+console.log(`${country}'s population is ${population > 33 ? 'above' :  
+'below'} average`);
+
+
+// Coding Challenge #4
+const bill = 275;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`); 
